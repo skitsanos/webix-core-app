@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "handlers": [
+    {
+      "path": "/dbstatus",
+      "handler": "dbstatus"
+    },
+    {
+      "path": "/logout",
+      "handler": "logout"
+    },
+    {
+      "path": "/login",
+      "handler": "login"
+    },
+    {
+      "path": "/login",
+      "handler": "login",
+      "method": "post"
+    },
+    {
+      "path": "/logs",
+      "handler": "logs"
+    }
+  ]
+}
