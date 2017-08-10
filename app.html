@@ -1,17 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>App</title>
-    <link rel="stylesheet" href="http://cdn.webix.com/site/skins/material.css" type="text/css" charset="utf-8">
+/**
+ * Created by skitsanos on 8/10/17.
+ */
+webix.ready(function ()
+{
+    webix.ui({
+        view: 'scrollview',
+        body: {
+            rows: [
+                {
+                    view: 'toolbar',
+                    css: 'app-header',
+                    height: 60,
+                    elements: [
+                        {view: 'label', template: '<i class="fa fa-rocket fa-3x"></i> <span class="app_title">Webix Core app</span>'},
+                        {},
+                        {},
+                        {view: 'icon', width: 40, icon: 'info'}
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
-
-    <script src="http://cdn.webix.com/edge/webix.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="ui/css/app.css" type="text/css" charset="utf-8">
-</head>
-<body>
-
-<script src="ui/js/app.js" type="text/javascript"></script>
-</body>
-</html>
+                    ]
+                },
+                {
+                    cols: [
+                        {},
+                        {
+                            rows: [
+                                {},
+                                {},
+                                {}
+                            ]
+                        },
+                        {}
+                    ]
+                }
+            ]
+        }
+    });
+});
